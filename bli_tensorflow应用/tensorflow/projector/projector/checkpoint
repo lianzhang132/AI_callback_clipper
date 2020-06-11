@@ -1,0 +1,2 @@
+model_checkpoint_path: "/root/code/bli_tensorflow\345\272\224\347\224\250/tensorflow/projector/projector/a_model.ckpt-1001"
+all_model_checkpoint_paths: "/root/code/bli_tensorflow\345\272\224\347\224\250/tensorflow/projector/projector/a_model.ckpt-1001"

@@ -1,0 +1,9 @@
+embeddings {
+  tensor_name: "embedding:0"
+  metadata_path: "/root/code/bli_tensorflow\345\272\224\347\224\250/tensorflow/projector/projector/metadata.tsv"
+  sprite {
+    image_path: "/root/code/bli_tensorflow\345\272\224\347\224\250/tensorflow/projector/data/mnist_10k_sprite.png"
+    single_image_dim: 28
+    single_image_dim: 28
+  }
+}
