@@ -7,7 +7,7 @@ Created on Wed Oct 24 17:22:57 2018
 import os
 import numpy as np
 
-PASCAL_PATH = 'dataset'
+PASCAL_PATH = '/root/'
 
 CACHE_PATH = 'annotation_cache'
 
@@ -30,7 +30,7 @@ max_size = 1000
 FLIPPED = False
 
 #max training step
-MAX_ITER = 5001 #90000 for VOC2007+VOC2012, 70000 for VOC2007 
+MAX_ITER = 70000 #90000 for VOC2007+VOC2012, 70000 for VOC2007 
 
 #the step of LEARNING_RATE decay
 lr_change_ITER = 5000 #70000 for VOC2007+VOC2012 50000 for VOC2007
@@ -61,7 +61,7 @@ anchor_ratios = [0.5,1,2]
 
 anchor_batch = 256
 
-weight_path = os.path.join('model_pretrained', 'vgg_16.ckpt')
+weight_path = os.path.join('/root/vgg_model', 'vgg_16.ckpt')
 
 weigt_output_path = OUTPUT_DIR
 
@@ -111,6 +111,6 @@ test_fp_tp_thresh = 0.5
 test_max_per_image = 100
 
 #test_image_show num
-img_save_num = 2
+img_save_num = 1
 
 image_output_dir = os.path.join(test_output_path, 'image_output')

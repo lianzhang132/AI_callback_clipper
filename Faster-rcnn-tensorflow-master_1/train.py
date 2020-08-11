@@ -149,8 +149,11 @@ if __name__ == '__main__':
     val_data = pascl.pascal_voc(cfg.test_imdb_name, 'test', fliped=False)
     solver = Solver(net, train_data, val_data, rpn_loss_obj, predict_loss)
     print ('start training')
+    start = datetime.datetime.now()
     solver.train_model()
-        
+    end = datetime.datetime.now()
+    latency = (end - start).total_seconds()  
+    print("The latency is   "+str(latency)+"秒")       
         
     
     

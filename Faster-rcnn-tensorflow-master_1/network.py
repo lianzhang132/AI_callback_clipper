@@ -193,6 +193,7 @@ class Net(object):
         scores_gather = tf.gather(scores, inds)
         scores_gather = tf.reshape(scores, shape=(-1, 1))
         batch_inds = tf.zeros((tf.shape(inds)[0], 1), dtype=tf.float32)
+        #tensorflow中用来拼接张量的函数tf.concat()
         blob = tf.concat([batch_inds, boxes], 1)
         return blob, scores_gather 
     
